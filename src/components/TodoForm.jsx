@@ -1,11 +1,8 @@
 import React, { useState, useRef } from "react";
 
 function TodoForm(props) {
-  //we will check if user is tring to update then we will display the value from props otherwise we will display null or ""
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
 
-  //useRef(initialValue) is a built-in React hook that accepts one argument as the initial value and returns a reference.
-  //A reference is an object having a single property “current”, which can be accessed and changed (mutated).
   const inputRef = useRef(null);
 
   const handleChange = (e) => {
@@ -13,10 +10,8 @@ function TodoForm(props) {
   };
 
   const handleSubmit = (e) => {
-    // the preventDefault() method is used to prevent the default behavior of an event from occurring
     e.preventDefault();
 
-    //here we have provided id as random number which will help us while updating or deleting the task
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input,
@@ -27,13 +22,10 @@ function TodoForm(props) {
 
   return (
     <form className="todo_form">
-      {/* In react we use "?" for conditional statement like if-else.
-       we have used, props.edit ?(if) show update button : (else) show Add button */}
-
       {props.edit ? (
         <>
           <input
-            placeholder="Update your item"
+            placeholder="Update Listing"
             value={input}
             onChange={handleChange}
             name="text"
@@ -41,13 +33,13 @@ function TodoForm(props) {
             className="input-edit"
           />
           <button onClick={handleSubmit} className="edit-button">
-            Update
+            update
           </button>
         </>
       ) : (
         <>
           <input
-            placeholder="Add your plan to list"
+            placeholder="Add Listing"
             value={input}
             onChange={handleChange}
             name="text"
@@ -55,7 +47,7 @@ function TodoForm(props) {
             ref={inputRef}
           />
           <button onClick={handleSubmit} className="add-button">
-            Add
+            add
           </button>
         </>
       )}

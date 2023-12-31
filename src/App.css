@@ -1,51 +1,51 @@
-/*css for app.jsx */
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 520px;
-    min-height: 600px;
-    background:white;
-    text-align: center;
-    margin: 90px auto;
-    border-radius: 10px;
-    padding-bottom: 32px;
+/* app.jsx */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: white;
+  text-align: center;
+  margin: 90px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
 }
 
-/* css for Todo.jsx */
-.header{
+/* Todo.jsx */
+.header {
   margin: 32px 0;
   font-size: 24px;
 }
 
-/* css for TodoForm.jsx */
-.todo_form{
-    margin-bottom: 32px;
+/* TodoForm.jsx */
+.todo_form {
+  margin-bottom: 32px;
 }
 
-.input-add{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: 2px solid #5d0cff;
-    width: 320px;
-    background: transparent;
-    color:black;    
+.input-add {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid #5d0cff;
+  width: 320px;
+  background: transparent;
+  color: black;
 }
 
-.input-edit{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    border: 2px solid #5d0cff;
-    box-shadow: 10px 5px 5px rgb(139, 123, 169);
-    width: 320px;
-    background: transparent;
-    color:black;
+.input-edit {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px solid #5d0cff;
+  box-shadow: 10px 5px 5px rgb(139, 123, 169);
+  width: 320px;
+  background: transparent;
+  color: black;
 }
 
 .edit-button,
-.add-button{
+.add-button {
   padding: 16px;
   border: none;
   border-radius: 5px;
@@ -60,9 +60,9 @@
   text-transform: capitalize;
 }
 
-/* css for TodoList.jsx */
-.todo-container{
-display: flex;
+/* TodoList.jsx */
+.todo-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 4px auto;
@@ -78,7 +78,7 @@ display: flex;
   width: 380px;
 }
 
-.todo-complete{
+.todo-complete {
   text-decoration: line-through;
   opacity: 0.4;
   align-items: center;
@@ -93,18 +93,17 @@ display: flex;
   width: 380px;
 }
 .icons {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .delete-icon {
-    margin-right: 5px;
-    color: red;
-   
+  margin-right: 5px;
+  color: red;
 }
-  
+
 .edit-icon {
-   color: skyblue;
+  color: skyblue;
 }
