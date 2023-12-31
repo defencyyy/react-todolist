@@ -35,8 +35,8 @@ function Todo() {
 
   return (
     <div>
-      <h1 className="header">Florendo | To Do List</h1>
-
+      <h3 className="name">Florendo, Cyrus Nathaniel P. | BSIS-NS-3A-M</h3>
+      <h1 className="header">TO DO LIST</h1>
       <TodoForm onSubmit={addTodo} />
       <TodoList
         todos={todos}

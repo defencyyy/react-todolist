@@ -1,24 +1,33 @@
-/* app.jsx */
+/* app */
 .container {
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 520px;
   min-height: 600px;
-  background: white;
+  background: rgb(255, 255, 255);
   text-align: center;
   margin: 90px auto;
   border-radius: 10px;
   padding-bottom: 32px;
 }
 
-/* Todo.jsx */
+/* Todo */
 .header {
   margin: 32px 0;
   font-size: 24px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(0, 0, 0);
 }
 
-/* TodoForm.jsx */
+.name {
+  margin: 32px 10px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(0, 100, 42);
+}
+
+/* TodoForm */
 .todo_form {
   margin-bottom: 32px;
 }
@@ -27,21 +36,23 @@
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  border: 2px solid #5d0cff;
+  border: 2px solid rgb(0, 119, 255);
   width: 320px;
   background: transparent;
   color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .input-edit {
   padding: 10px;
   margin: 5px;
   border-radius: 5px;
-  border: 2px solid #5d0cff;
-  box-shadow: 10px 5px 5px rgb(139, 123, 169);
+  border: 2px solid rgb(0, 119, 255);
+  box-shadow: 10px 5px 5px rgba(134, 134, 134, 0.514);
   width: 320px;
   background: transparent;
   color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .edit-button,
@@ -51,16 +62,13 @@
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
+  background: rgb(36, 75, 247);
   color: #fff;
   text-transform: capitalize;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* TodoList.jsx */
+/* TodoList */
 .todo-container {
   display: flex;
   justify-content: space-between;
@@ -69,10 +77,10 @@
   color: #fff;
   background: linear-gradient(
     90deg,
-    rgb(144, 10, 211) 0%,
-    rgb(235, 230, 228) 100%
+    rgb(80, 129, 84) 70%,
+    rgb(206, 200, 199) 100%
   );
-
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 16px;
   border-radius: 5px;
   width: 380px;
@@ -83,15 +91,12 @@
   opacity: 0.4;
   align-items: center;
   margin: 4px auto;
-  background: linear-gradient(
-    90deg,
-    rgb(144, 10, 211) 0%,
-    rgb(235, 230, 228) 100%
-  );
+  background: rgb(36, 75, 247);
   padding: 16px;
   border-radius: 5px;
   width: 380px;
 }
+
 .icons {
   display: flex;
   align-items: center;
@@ -101,9 +106,9 @@
 
 .delete-icon {
   margin-right: 5px;
-  color: red;
+  color: rgb(105, 105, 105);
 }
 
 .edit-icon {
-  color: skyblue;
+  color: rgb(0, 183, 255);
 }
